@@ -6,6 +6,7 @@ jobs:
     name: build
     runs-on: ubuntu-latest
     steps:
+      - run: sudo apt-get install singularity-container
       - uses: actions/checkout@v2
       - run: make
         name: build singularity container
