@@ -2,6 +2,8 @@
 
 Thin [singularity](https://sylabs.io/guides/3.6/user-guide/introduction.html) wrapper around [asciidoctor/docker-asciidoctor](https://github.com/asciidoctor/docker-asciidoctor) to ease use of [asciidoctor](https://asciidoctor.org/).
 
+*N.B. images based on this configuration cannot be distributed [until docker-asciidoctor has a license](https://github.com/asciidoctor/docker-asciidoctor/issues/158)*
+
 ## Usage
 
 1. [Install singularity](https://sylabs.io/guides/3.6/user-guide/quick_start.html#quick-installation-steps) N.B. Many OSs have `singularity` in their package repositories - use that if you can
@@ -51,3 +53,7 @@ adoc asciidoctor index.adoc
 Singularity also gives you a lot more flexibility,
 allowing you to navigate around your own file system and run asciidoctor on whatever you want,
 rather than having to mount and be constrained to a single specific directory.
+
+## Credit
+
+All credit for making this work goes to the maintainers of [asciidoctor/docker-asciidoctor](https://github.com/asciidoctor/docker-asciidoctor).
